@@ -1,0 +1,12 @@
+{
+    "name": "HLF Swarm",
+    "version": "1.0.0",
+    "description": "A distributed application on Hyperledger Fabric",
+    "repository": "https://github.com/SHA056/hlf-swarm",
+    "image": "boxware/ubuntu-base",
+    "hardware": "t2.medium",
+    "folder": "~/Desktop",
+    "commands": [
+        "",
+    ]
+}
