@@ -6,7 +6,7 @@ set -e
 
 sleep 5
 
-cd /home/psq/blockchain/hlf-swarm/network
+cd /home/a/blockchainDapp/hlf-swarm/network
 
 #remove crypro files
 printf "\n"
@@ -36,9 +36,9 @@ fi
 printf "\n"
 printf "....Searching for unrequired docker images...."
 printf "\n\n"
-docker images | grep samahara | awk '{printf $3}'
+docker images | grep smahara | awk '{printf $3}'
 if [ $? -ne 0 ]; then
-    docker rmi -f $(docker images | grep samahara | awk '{print $3}')
+    docker rmi -f $(docker images | grep smahara | awk '{print $3}')
     printf "All related images deleted"
 else
     printf "No related images\n\n"

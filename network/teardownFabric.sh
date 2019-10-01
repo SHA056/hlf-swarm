@@ -16,10 +16,10 @@ docker service rm $(docker service ls -q)
 docker rm -f $(docker ps -aq)
 
 # remove chaincode docker images
-docker rmi -f $(docker images | grep samahara | awk '{print $3}')
+docker rmi -f $(docker images | grep smahara | awk '{print $3}')
 
 # clean up dangling network and volumes
-docker system prune
 docker volume prune
+docker system prune
 docker swarm leave -f
 docker network prune
