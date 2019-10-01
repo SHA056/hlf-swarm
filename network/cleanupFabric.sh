@@ -20,6 +20,9 @@ else
     printf "No cert files\n\n"
 fi
 
+# cleanup services
+docker service rm $(docker service ls -q)
+
 # remove docker containers
 printf "\n"
 printf "....Searching for unrequired docker containers...."
