@@ -2,9 +2,9 @@
 version: '3.2'
 
 networks:
-  samahara:
+  smahara:
     external: 
-      name: samahara
+      name: smahara
 
 services:
   
@@ -17,7 +17,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == psq-Vostro-3546
+          - node.hostname == psq
     image: hyperledger/fabric-orderer:x86_64-1.1.0
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/orderer
     command: orderer
@@ -60,6 +60,6 @@ services:
     ports:
       - 8050:7050
     networks:
-      samahara:
+      smahara:
         aliases:
           - orderer1.example.com

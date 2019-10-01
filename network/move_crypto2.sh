@@ -14,7 +14,7 @@ mkdir -p /var/mynetwork/fabric-src/hyperledger/fabric
 sudo chown -R $(whoami) /var/mynetwork
 sudo chown -R $USER:$USER /var/mynetwork
 
-scp -R psq@192.168.1.102:/home/a/blockchainDapp/hyperledger/fabric/* /var/mynetwork/fabric-src/hyperledger/fabric/
+scp -r a@192.168.1.102:/home/a/blockchainDapp/hyperledger/fabric/* /var/mynetwork/fabric-src/hyperledger/fabric/
 
 cp -R crypto-config /var/mynetwork/certs/
 cp -R config /var/mynetwork/certs/

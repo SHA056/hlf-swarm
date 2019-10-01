@@ -27,10 +27,10 @@ printf "************************************************************************
 # printf "./create_network.sh"
 # ./create_network.sh
 
-printf "\n./master.sh\n"
-./master.sh
+# # printf "\n./master.sh\n"
+# # ./master.sh
 
-sleep 5
+# sleep 5
 
 printf "\n./move_crypto.sh\n"
 ./move_crypto.sh
